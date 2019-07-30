@@ -11,5 +11,8 @@ node default {
         ensure  => file,
         content => 'This should exist',
         owner   => 'root',
+    }
+    file { '/tmp/README.md':
+        owner   => 'root',
     }    
 }
